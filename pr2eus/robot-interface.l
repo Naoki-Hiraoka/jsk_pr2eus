@@ -233,6 +233,7 @@
                              controller-state)
                            control_msgs::JointTrajectoryControllerState
                            #'send self :set-robot-state1 key :groupname groupname)))
+       (setq controller-actions (append controller-actions tmp-actions))
        )
       (t ;; not creating actions, just search
        (mapcar
